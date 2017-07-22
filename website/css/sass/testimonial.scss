@@ -1,0 +1,15 @@
+.horizontal-scroll {
+	overflow: auto;
+	white-space: nowrap;
+}
+
+.testimonial {
+	display: inline-block;
+	max-width: 300px; 
+	white-space: normal;
+}
+
+// hide custom scrollbar by force >:O 
+.mCSB_draggerContainer {
+	display: none;
+}

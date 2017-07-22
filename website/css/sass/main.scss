@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'custom-bootstrap';
+@import 'testimonial';
 
 body {
 	background-color: $gray-darker;
@@ -16,4 +17,13 @@ body {
 	margin-left: 20px; 
   	font-size: 2.5em;
   	line-height: $navbar-height;
+}
+
+.card-title {
+	color: $gray-darker;
+}
+
+.horizontal-scroll {
+	overflow: auto;
+	white-space: nowrap;
 }
