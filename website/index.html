@@ -2,36 +2,44 @@
 <html>
 	<head>
 		<!-- MDBootstrap -->
-		<link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="resources/css/mdb.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/mdb.min.css">
 		<!-- Font Awesome -->
-		<link rel="stylesheet" type="text/css" href="resources/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 		<!-- Our styles -->
-		<link rel="stylesheet" type="text/css" href="resources/css/main.css">
-		<!-- JQuery -->
-		<script type="text/javascript" src="resources/js/jquery.min.js"></script>
-		<!-- Bootstrap core JavaScript -->
-		<script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
-		<!-- MDB core JavaScript -->
-		<script type="text/javascript" src="resources/js/mdb.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#"><img class="logo" src="resources/images/Black background white letters.png"/></a>
-				</div>
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Area of Focus</a></li>
-					<li><a href="#">Opportunities</a></li>
-					<li><a href="#">Contact us</a></li>
+		<nav class="navbar navbar-toggleable-md navbar-dark">
+			<div class="container">
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#divNavbarCollapse">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img class="logo" src="images/Black background white letters.png"/></a>
+				<div id="divNavbarCollapse" class="collapse navbar-collapse">
+					<ul class="navbar-nav mr-auto">
+					<li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Area of Focus</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Opportunities</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
 				</ul>
 				<a href="https://www.linkedin.com/in/recruitermary/" target="_blank"><i class="fa fa-linkedin-square navbar-contact-icon" aria-hidden="true"></i></a>
 				<a href="mailto:mary@bighaystack.com"><i class="fa fa-envelope navbar-contact-icon" aria-hidden="true"></i></a>
 				<a href="tel:770-619-0060"><i class="fa fa-phone navbar-contact-icon" aria-hidden="true"></i></a>
+				</div>
+				
+				
 			</div>
 		</nav>
+		<!-- JQuery -->
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/tether.min.js"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<!-- MDB core JavaScript -->
+		
+		<script type="text/javascript" src="js/mdb.js"></script>
 	</body>
+	
 </html>
