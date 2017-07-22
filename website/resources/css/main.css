@@ -3,17 +3,27 @@
 
 .navbar-nav > li > a, .navbar-brand {
   padding: 0 15px !important;
-  line-height: 100px !important;
-  font-size: x-large;
-  height: 100px !important; }
+  font-size: x-large; }
 
 .navbar {
   min-height: 100px !important; }
 
+@media (min-width: 768px) {
+  .navbar-nav > li > a, .navbar-brand {
+    line-height: 100px !important;
+    height: 100px !important; } }
 body {
   background-color: #333133; }
 
 .logo {
-  height: 100%; }
+  height: 90%;
+  margin: 5px; }
+
+.navbar-contact-icon {
+  float: right;
+  color: white;
+  margin-left: 20px;
+  font-size: 2.5em;
+  line-height: 100px; }
 
 /*# sourceMappingURL=main.css.map */
