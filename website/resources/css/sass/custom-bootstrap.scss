@@ -1,0 +1,13 @@
+$navbar-height: 100px;
+
+.navbar-inverse {
+	background-color: darken($gray-darker, 5%);
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding:0 15px !important;
+    line-height: $navbar-height !important;
+    font-size: x-large;
+    height: $navbar-height !important;
+}
+.navbar {min-height:$navbar-height !important;}

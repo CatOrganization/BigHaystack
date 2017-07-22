@@ -1,0 +1,19 @@
+.navbar-inverse {
+  background-color: #262526; }
+
+.navbar-nav > li > a, .navbar-brand {
+  padding: 0 15px !important;
+  line-height: 100px !important;
+  font-size: x-large;
+  height: 100px !important; }
+
+.navbar {
+  min-height: 100px !important; }
+
+body {
+  background-color: #333133; }
+
+.logo {
+  height: 100%; }
+
+/*# sourceMappingURL=main.css.map */
