@@ -14,10 +14,6 @@
 .navbar {
   min-height: 100px !important; }
 
-@media (min-width: 768px) {
-  .navbar-nav > li > a, .navbar-brand {
-    line-height: 100px !important;
-    height: 100px !important; } }
 .page-title {
   color: white;
   margin: 20px;
@@ -61,6 +57,9 @@
       margin-top: 25px;
       height: 100px;
       border-radius: 50%; }
+.navbar-nav > li > a, .navbar-brand {
+  line-height: 100px !important;
+  height: 100px !important; }
 
 body {
   background-color: #333133; }
