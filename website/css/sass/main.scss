@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'custom-bootstrap';
+@import 'navbar';
 
 body {
 	background-color: $gray-darker;
@@ -8,12 +9,4 @@ body {
 .logo {
 	height: 90%;
 	margin: 5px;
-}
-
-.navbar-contact-icon {
-	float: right;
-	color: white;
-	margin-left: 20px; 
-  	font-size: 2.5em;
-  	line-height: $navbar-height;
 }

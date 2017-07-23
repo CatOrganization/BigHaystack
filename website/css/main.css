@@ -6,21 +6,19 @@
 
 .navbar-nav > li > a, .navbar-brand {
   padding: 0 15px !important;
+  line-height: 100px;
+  height: 100px;
   font-size: x-large; }
 
+@media (max-width: 1200px) {
+  .navbar-nav > li > a {
+    font-size: large; } }
+@media (max-width: 992px) {
+  .navbar-nav > li > a {
+    line-height: 60px;
+    height: 60px; } }
 .navbar {
   min-height: 100px !important; }
-
-.navbar-nav > li > a, .navbar-brand {
-  line-height: 100px !important;
-  height: 100px !important; }
-
-body {
-  background-color: #333133; }
-
-.logo {
-  height: 90%;
-  margin: 5px; }
 
 .navbar-contact-icon {
   float: right;
@@ -28,5 +26,21 @@ body {
   margin-left: 20px;
   font-size: 2.5em;
   line-height: 100px; }
+
+@media (max-width: 992px) {
+  .navbar-contact-icon {
+    float: left;
+    line-height: 60px;
+    font-size: 2em; } }
+.navbar-filler {
+  height: 100px;
+  background-color: #262526; }
+
+body {
+  background-color: #333133; }
+
+.logo {
+  height: 90%;
+  margin: 5px; }
 
 /*# sourceMappingURL=main.css.map */

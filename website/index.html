@@ -10,7 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
-		<nav class="navbar navbar-toggleable-md navbar-dark">
+		<nav class="navbar fixed-top navbar-toggleable-md navbar-dark">
 			<div class="container">
 				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#divNavbarCollapse">
 				<span class="navbar-toggler-icon"></span>
@@ -32,6 +32,11 @@
 				
 			</div>
 		</nav>
+
+		<!-- This div goes under the floating nav bar to ensure no content is hidden behind it -->
+		<div class="navbar-filler">
+		</div>
+
 		<!-- JQuery -->
 		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 		<script type="text/javascript" src="js/tether.min.js"></script>
@@ -40,6 +45,9 @@
 		<!-- MDB core JavaScript -->
 		
 		<script type="text/javascript" src="js/mdb.js"></script>
+
+		<!-- navbar stuff -->
+		<script type="text/javascript" src="js/scroll.js"></script>
 	</body>
 	
 </html>
