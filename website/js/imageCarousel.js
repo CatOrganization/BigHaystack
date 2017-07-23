@@ -24,6 +24,7 @@ function createImageSlide(imageSrc, imageNum) {
 	var image = document.createElement('IMG');
 	slide.setAttribute('class', 'carousel-item');
 	image.setAttribute('src', imageSrc);
+	image.setAttribute('class', 'carousel-image mx-auto');
 	slide.setAttribute('id', 'divSlide' + imageNum);
 
 	slide.appendChild(image);
@@ -35,6 +36,6 @@ function createIndicator(indicatorNum) {
 	indicator.setAttribute('data-target', '#divCarouselWrapper');
 	// offset this back to zero indexed
 	indicator.setAttribute('data-slide-to', indicatorNum - 1);
-	indicator.setAttribute('id', 'liIndicator' + indicatorNum)
+	indicator.setAttribute('id', 'liIndicator' + indicatorNum);
 	return indicator;
 }

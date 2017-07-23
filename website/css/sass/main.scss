@@ -1,0 +1,24 @@
+@import 'variables';
+@import 'custom-bootstrap';
+
+body {
+	background-color: $gray-darker;
+}
+
+.logo {
+	height: 90%;
+	margin: 5px;
+}
+
+.carousel-image {
+	height: 400px;
+	margin: 5px;
+}
+
+.navbar-contact-icon {
+	float: right;
+	color: white;
+	margin-left: 20px; 
+  	font-size: 2.5em;
+  	line-height: $navbar-height;
+}
