@@ -15,9 +15,9 @@ $navbar-height: 100px;
 
 .navbar {min-height:$navbar-height !important;}
 
-@media (min-width: 768px) {
+// @media (min-width: 768px) {
 	.navbar-nav > li > a, .navbar-brand {
 	    line-height: $navbar-height !important;
         height: $navbar-height !important;
 	}
-}
+// }
