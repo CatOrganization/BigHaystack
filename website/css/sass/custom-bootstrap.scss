@@ -1,4 +1,5 @@
 $navbar-height: 100px;
+$navbar-collapsed-height: 60px;
 
 .navbar-dark {
 	background-color: darken($gray-darker, 5%);
@@ -10,14 +11,23 @@ $navbar-height: 100px;
 
 .navbar-nav > li > a, .navbar-brand {
     padding:0 15px !important;
+    line-height: $navbar-height;
+    height: $navbar-height;
+    
     font-size: x-large;
 }
 
-.navbar {min-height:$navbar-height !important;}
-
-// @media (min-width: 768px) {
-	.navbar-nav > li > a, .navbar-brand {
-	    line-height: $navbar-height !important;
-        height: $navbar-height !important;
+@media (max-width: 1200px) {
+	.navbar-nav > li > a {
+	    font-size: large;
 	}
-// }
+}
+
+@media (max-width: 992px) {
+	.navbar-nav > li > a {
+	    line-height: $navbar-collapsed-height;
+	    height: $navbar-collapsed-height;
+	}
+}
+
+.navbar {min-height:$navbar-height !important;}

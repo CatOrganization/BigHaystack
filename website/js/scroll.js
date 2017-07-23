@@ -1,4 +1,8 @@
 $(document).ready(function() {
+
+    // set the navbar filler's height to fit underneath the navbar
+    $('.navbar-filler').height($('.navbar').outerHeight(true));
+
     // Add smooth scrolling to all links in navbar + footer link
     $(".navbar a, footer a[href='#home']").on('click', function(event) {
 
