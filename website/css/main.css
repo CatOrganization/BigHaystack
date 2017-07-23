@@ -23,8 +23,12 @@ body {
   margin: 5px; }
 
 .carousel-image {
-  height: 400px;
+  max-height: 400px;
+  width: 100%;
   margin: 5px; }
+
+.carousel-column {
+  padding: 0; }
 
 .navbar-contact-icon {
   float: right;
