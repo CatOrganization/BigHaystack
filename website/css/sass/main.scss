@@ -1,8 +1,33 @@
 @import 'variables';
 @import 'custom-bootstrap';
+@import 'pages';
 
 body {
 	background-color: $gray-darker;
+}
+
+.testimonial-row {
+	margin: 30px;
+	margin-top: 5em;
+
+	.card {
+		margin: 0 20px;
+	}
+
+	.testimonial-head {
+		background-color: $gray-darker;
+		height: 150px;
+		min-width: 150px;
+
+		img {
+			display: block;
+			margin: auto;
+			margin-top: 25px;
+
+			height: 100px;
+			border-radius: 50%;
+		}
+	}
 }
 
 .logo {
