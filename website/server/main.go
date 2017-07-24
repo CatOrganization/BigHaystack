@@ -15,6 +15,7 @@ const (
 
 func main() {
 	log.Info("hello")
+	defer log.Info("Exiting")
 	http.Handle("/", http.FileServer(http.Dir(staticDir)))
 	http.ListenAndServe(":8080", nil)
 }
