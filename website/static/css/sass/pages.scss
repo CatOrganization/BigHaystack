@@ -1,7 +1,7 @@
 
 .page-title {
 	color: white;
-	margin: 20px;
+	padding: 20px;
 	text-align: center;
 }
 
@@ -31,5 +31,44 @@
 
 	.about-img {
 		width: 75%;
+	}
+}
+
+.contact-page {
+	//background-image: url("https://livingthelifeasamomandteacher.files.wordpress.com/2013/11/atlanta_skyline_from_buckhead.jpg");
+	background-size: cover;
+	width: 100%;
+	padding-bottom: 100px;
+	padding-top: 30px;
+
+	.contact-row {
+		margin-top: 100px;
+		text-align: center;
+		overflow: hidden;
+
+		h3 {
+			margin-top: 10px;
+			color: white;
+			font-family: 'Open Sans';
+		}
+
+		.contact-col {
+			margin-bottom: 30px;
+		  	transition: all 0.2s linear;
+		}
+
+		.contact-col:hover {
+			-webkit-transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+		
+	}
+
+	a {
+		margin-top: 30px;
+
+		color: white;
+		font-size: large;
 	}
 }
