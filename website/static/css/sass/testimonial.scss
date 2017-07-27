@@ -20,3 +20,11 @@
 		}
 	}
 }
+
+.testimonial-indicator {
+    background-color: $gray-darker !important;
+
+    &.active {
+        background-color: $gray-lighter !important;
+    }
+}
