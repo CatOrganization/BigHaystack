@@ -31,3 +31,7 @@ $navbar-collapsed-height: 60px;
 }
 
 .navbar {min-height:$navbar-height !important;}
+
+.carousel-indicators {
+    bottom: -20px;
+}

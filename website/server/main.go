@@ -11,11 +11,11 @@ var (
 
 const (
 	staticDir = "../static"
+	port = "8080"
 )
 
 func main() {
-	log.Info("hello")
-	defer log.Info("Exiting")
+	log.Info("Running server", "port", port)
 	http.Handle("/", http.FileServer(http.Dir(staticDir)))
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":" + port, nil)
 }
