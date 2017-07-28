@@ -1,7 +1,7 @@
 
 .page-title {
 	color: white;
-	margin: 20px;
+	padding: 20px;
 	text-align: center;
 }
 
@@ -31,5 +31,49 @@
 
 	.about-img {
 		width: 75%;
+	}
+}
+
+.contact-page {
+	color: #fff;
+	background: url("http://www.prism.gatech.edu/~ckramer30/images/IMG_0107.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 50px;
+	padding-bottom: 300px;
+	width: 100%;
+
+	.contact-row {
+		margin-top: 50px;
+		text-align: center;
+		overflow: hidden;
+
+		h3 {
+			margin-top: 10px;
+			color: white;
+			font-family: 'Open Sans';
+		}
+
+		.contact-col {
+			margin-bottom: 30px;
+		  	transition: all 0.2s linear;
+		}
+
+		.contact-col:hover {
+			-webkit-transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+		
+	}
+
+	a {
+		margin-top: 30px;
+
+		color: white;
+		font-size: large;
 	}
 }
