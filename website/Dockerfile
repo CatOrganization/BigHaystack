@@ -1,4 +1,4 @@
-FROM bighaystack/go_sass:0.3.0
+FROM bighaystack/go_sass:0.1.0
 
 COPY . /go/src/github.com/jbonzo/BigHaystack/website
 
