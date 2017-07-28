@@ -5,13 +5,17 @@ import (
 	"github.com/inconshreveable/log15"
 )
 
+var (
+	log = log15.New("server", "/")
+)
+
 const (
 	staticDir = "../static"
 	port = "8080"
 )
 
 func main() {
-	log15.Info("Running server", "port", port)
+	log.Info("Running server", "port", port)
 	http.Handle("/", http.FileServer(http.Dir(staticDir)))
 	http.ListenAndServe(":" + port, nil)
 }
