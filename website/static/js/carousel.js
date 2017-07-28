@@ -145,17 +145,17 @@ function testimonialData() {
             'image': image
         },
         {
-            'name': 'Jim Jones',
+            'name': 'Jim John',
             'text': 'Mary is the perfect recruiter, she spent time with me understanding and clarifying my objectives for the role; then she submitted candidates that matched perfectly and did not waste time on candidates that were not what I was looking for. The result was a quick short list and a positive hire. I will use her again!',
             'image': image
         },
         {
-            'name': 'Ted Bundy',
+            'name': 'Ted Bun',
             'text': 'Mary is one of the top recruiters I have worked with. She took the search very seriously, consistently found outstanding candidates for me to interview and was very helpful in working out a win / win with the selected candidate.',
             'image': image
         },
         {
-            'name': 'Jack Ripper',
+            'name': 'Jack Ripiere',
             'text': 'Mary did a great job finding me candidates that met some complex criteria. Good listener in terms of interpreting what I wanted. Good follow-up. Experienced recruiter.',
             'image': image
         },
@@ -175,7 +175,7 @@ function testimonialData() {
             'image': image
         },
         {
-            'name': 'Jim Jones',
+            'name': 'Jim John',
             'text': 'I have been dealing with executive recruiters for a few years now. Hands down Mary is the best, most professional recruiter I have ever worked with. Straight-forward, highly transparent and consultative through-out the recruiting process, and possessing really outstanding people skills, I can recommend Mary without hesitation.',
             'image': image
         }
