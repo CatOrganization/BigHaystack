@@ -1,5 +1,9 @@
 .testimonial-row {
 	margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 90%;
 
 	.card {
 		margin: 20px 20px;
@@ -26,5 +30,18 @@
 
     &.active {
         background-color: $gray-lighter !important;
+    }
+}
+
+.testimonial-text {
+    font-size: small;
+}
+
+.testimonial-button {
+    width: 10%;
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        background-color: $gray-darker;
+        border-radius: 50%;
     }
 }
