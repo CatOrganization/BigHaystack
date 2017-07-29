@@ -12,7 +12,7 @@ function createImages() {
 
     for (var i = 0; i < images.length; i++) {
         carouselSlides.append(createImageSlide(placeholderDir + images[i], i + 1));
-        indicatorList.append(createIndicator(i + 1, '#divImageWrapper'))
+        indicatorList.append(createIndicator(i + 1, 'image'))
     }
 
     $('#divImageSlide1').toggleClass('active');
@@ -25,7 +25,7 @@ function createImageSlide(imageSrc, imageNum) {
     slide.setAttribute('class', 'carousel-item');
     image.setAttribute('src', imageSrc);
     image.setAttribute('class', 'carousel-image mx-auto');
-    slide.setAttribute('id', 'divSlide' + imageNum);
+    slide.setAttribute('id', 'divImageSlide' + imageNum);
 
     slide.appendChild(image);
     return slide;
