@@ -8,11 +8,11 @@ function createImages() {
     var carouselSlides = $('#divImageSlides');
 
     var placeholderDir = 'img/carousel_images/';
-    var images = ['placeholder1.jpg', 'placeholder2.jpg', 'placeholder3.jpg'];
+    var images = ['slide1.jpg', 'slide2.jpg'];
 
     for (var i = 0; i < images.length; i++) {
         carouselSlides.append(createImageSlide(placeholderDir + images[i], i + 1));
-        indicatorList.append(createIndicator(i + 1, '#divImageWrapper'))
+        indicatorList.append(createIndicator(i + 1, 'image'))
     }
 
     $('#divImageSlide1').toggleClass('active');
@@ -24,8 +24,8 @@ function createImageSlide(imageSrc, imageNum) {
     var image = document.createElement('IMG');
     slide.setAttribute('class', 'carousel-item');
     image.setAttribute('src', imageSrc);
-    image.setAttribute('class', 'carousel-image mx-auto');
-    slide.setAttribute('id', 'divSlide' + imageNum);
+    image.setAttribute('class', 'carousel-image');
+    slide.setAttribute('id', 'divImageSlide' + imageNum);
 
     slide.appendChild(image);
     return slide;
