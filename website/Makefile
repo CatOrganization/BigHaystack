@@ -1,4 +1,7 @@
 ifndef
+$(info No tag was set. Defaulting to 'latest') 
+$(info If you want to set a tag pass the arg TAG=... before the make command)
+$(info Ex: TAG=1.0 make tag)
 TAG=latest
 endif
 
