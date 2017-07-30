@@ -12,7 +12,7 @@ RUN dep ensure
 
 RUN GOOS=linux GOARCH=amd64 go install
 
-EXPOSE 8080
+EXPOSE 80
 
 ENTRYPOINT ["/go/bin/server"]
 #ENTRYPOINT ["bash"]
