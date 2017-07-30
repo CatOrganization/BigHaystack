@@ -11,7 +11,7 @@ var (
 
 const (
 	staticDir = "../static"
-	port = "8080"
+	port = "80"
 )
 
 func main() {

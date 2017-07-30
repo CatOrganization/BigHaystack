@@ -1,18 +1,18 @@
-FROM golang
+FROM rickybarillas/go_sass
 
-RUN apt-get update && apt-get install -y \
-    ruby
+COPY . /go/src/github.com/jbonzo/BigHaystack/website
 
-COPY . /go/src/github.com/jbonzo/BigHaystack/
+WORKDIR /go/src/github.com/jbonzo/BigHaystack/website
 
-WORKDIR /go/src/github.com/jbonzo/BigHaystack/
+CMD ./bin/sass.sh compile
 
-CMD ["./bin/sass.sh", "compile"]
+WORKDIR /go/src/github.com/jbonzo/BigHaystack/website/server
 
-WORKDIR /go/src/github.com/jbonzo/BigHaystack/server
+RUN dep ensure
 
 RUN GOOS=linux GOARCH=amd64 go install
 
-EXPOSE 8080
+EXPOSE 80
 
 ENTRYPOINT ["/go/bin/server"]
+#ENTRYPOINT ["bash"]
