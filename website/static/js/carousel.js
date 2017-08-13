@@ -149,6 +149,10 @@ function testimonialData() {
         {
             'name': 'Strategic Account Executive',
             'text': 'Mary is an exceptional recruiter who is outstanding at locating and screening candidates for targeted positions. Her work is thorough and always completed in a timely manner.',
+        },
+        {
+            'name': 'Enterprise Software Sales Director',
+            'text': 'Mary was a joy to work with in my pursuit of my previous career move. She was insightful, informative and responsive and recommend her as a business partner in talent acquisition or as a recruiter.'
         }
     ];
 
