@@ -92,36 +92,25 @@ function testimonialCard(data) {
     var card = document.createElement('DIV');
     card.setAttribute('class', 'card');
 
-    card.appendChild(head(data.image));
     card.appendChild(block(data.name, data.text));
     col.appendChild(card);
 
     return col;
 }
 
-function head(imagePath) {
-    var head = document.createElement('DIV');
-    head.setAttribute('class', 'testimonial-head');
-    var image = document.createElement('IMG');
-    image.setAttribute('src', imagePath);
-    head.appendChild(image);
-
-    return head
-}
-
 function block(name, text) {
     var block = document.createElement('DIV');
     block.setAttribute('class', 'card-block');
-    var nameHeader = document.createElement('H3');
-    nameHeader.setAttribute('class', 'card-title');
+    var nameHeader = document.createElement('H5');
+    nameHeader.setAttribute('class', 'testimonial-name');
     var textP = document.createElement('P');
     textP.setAttribute('class', 'card-text testimonial-text');
 
     nameHeader.appendChild(document.createTextNode(name));
     textP.appendChild(document.createTextNode(text));
 
-    block.appendChild(nameHeader);
     block.appendChild(textP);
+    block.appendChild(nameHeader);
 
     return block;
 }
@@ -130,54 +119,36 @@ function testimonialData() {
     var image = 'http://www.pclodge.com/wp-content/uploads/2014/08/placeholder.png';
     return [
         {
-            'name': 'Joe John',
-            'text': 'Mary is thorough, has a sense of urgency, great follow through and researches each role to fully understand the unique qualifications and nuances for placing the right person in the right position. She has the uncanny ability to determine quickly if the candidate has the personality and skills to mesh with the culture and role. Mary has the utmost integrity, blends and balances confidentiality between client and candidate plus she is an outstanding coach to fully prepare the candidate as the search progresses. She provides an "outside-in" perspective to the decision making process. Over 40 candidates were hired through Mary Morris and the retention rate was ~90%.',
-            'image': image
+            'name': 'Executive Board Member',
+            'text': 'Mary has the utmost integrity, blends and balances confidentiality between client and candidate plus she is an outstanding coach to fully prepare the candidate as the search progresses. She provides an "outside-in" perspective to the decision making process. Over 40 candidates were hired through Mary Morris and the retention rate was ~90%.',
         },
         {
-            'name': 'Susan Withers',
-            'text': 'I recently had the opportunity to work with Mary. In the process I found Mary to always maintain the highest level of professionalism. Her follow through, diligence to timelines and deadlines, thoroughness, integrity and total support through the process I witnessed is a testimony to not only Mary, but her leadership style as well. I would highly recommend Mary to any company seeking help from an executive search firm/recruiter.',
-            'image': image
+            'name': 'Senior Business Consultant',
+            'text': 'I found Mary to always maintain the highest level of professionalism. Her follow through, diligence to timelines and deadlines, thoroughness, integrity and total support through the process I witnessed is a testimony to not only Mary, but her leadership style as well.',
         },
         {
-            'name': 'Alex Alexandre',
-            'text': 'I have used Mary Morris, twice this year to hire both a sales account executive and an Industry Consultant for the Aerospace sector. Mary worked harder than any recruiter I have used in the past to really understand our requirements and to find the best candidate possible. In both cases, we brought our own found candidates to the interview process and both times, we selected the candidates that Mary provided. Her prescreening of the candidates saved me time by only presenting people she knew would fit the job and personalities we were looking for. In the future, Mary is the first person I will go to when trying to find exceptional people from the various manufacturing sectors.',
-            'image': image
-        },
-        {
-            'name': 'Jim John',
+            'name': 'Director Strategic Business Development',
             'text': 'Mary is the perfect recruiter, she spent time with me understanding and clarifying my objectives for the role; then she submitted candidates that matched perfectly and did not waste time on candidates that were not what I was looking for. The result was a quick short list and a positive hire. I will use her again!',
-            'image': image
         },
         {
-            'name': 'Ted Bun',
+            'name': 'SVP of Sales & Marketing',
             'text': 'Mary is one of the top recruiters I have worked with. She took the search very seriously, consistently found outstanding candidates for me to interview and was very helpful in working out a win / win with the selected candidate.',
-            'image': image
         },
         {
-            'name': 'Jack Ripiere',
+            'name': 'Senior VP of Business Development',
             'text': 'Mary did a great job finding me candidates that met some complex criteria. Good listener in terms of interpreting what I wanted. Good follow-up. Experienced recruiter.',
-            'image': image
         },
         {
-            'name': 'Joe John',
-            'text': 'Mary did a great job finding me candidates that met some complex criteria. Good listener in terms of interpreting what I wanted. Good follow-up. Experienced recruiter.',
-            'image': image
+            'name': 'Customer Sales Director',
+            'text': 'Mary\'s knowledge of her clients\' business and requirements really separate her from other recruiters. She was thoughtful to ensure I would be the right fit throughout the process of recruiting and placing me in my current position. Follow-up was also outstanding.',
         },
         {
-            'name': 'Susan Withers',
-            'text': 'Mary’s knowledge of her clients’ business and requirements really separate her from other recruiters. She was thoughtful to ensure I would be the right fit throughout the process of recruiting and placing me in my current position. Follow-up was also outstanding.',
-            'image': image
+            'name': 'VP of Product Marketing',
+            'text': 'Mary is the most incredibly through, detail-oriented executive recruiter I have ever encountered. As an executive having worked for large hospitality organizations, Mary\'s integrity and ability to provide results is the best in the industry.',
         },
         {
-            'name': 'Alex Alexandre',
-            'text': 'Mary is the most incredibly through, detail-oriented executive recruiter I have ever encountered. As an executive having worked for large hospitality organizations, Mary’s integrity and ability to provide results is the best in the industry.',
-            'image': image
-        },
-        {
-            'name': 'Jim John',
-            'text': 'I have been dealing with executive recruiters for a few years now. Hands down Mary is the best, most professional recruiter I have ever worked with. Straight-forward, highly transparent and consultative through-out the recruiting process, and possessing really outstanding people skills, I can recommend Mary without hesitation.',
-            'image': image
+            'name': 'Strategic Account Executive',
+            'text': 'Mary is an exceptional recruiter who is outstanding at locating and screening candidates for targeted positions. Her work is thorough and always completed in a timely manner.',
         }
     ];
 
