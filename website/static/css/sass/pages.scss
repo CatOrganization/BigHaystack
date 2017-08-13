@@ -16,16 +16,6 @@
 	font-family: 'Open Sans';
 }
 
-.about-page-break {
-	text-align: center;
-	padding: 50px 0;
-
-	h1 {
-		font-style: italic;
-		color: white;
-	}
-}
-
 .about-page {
 	background: $executive-purple; /* For browsers that do not support gradients */
 	background: -webkit-linear-gradient(left top, $executive-purple, $red-haystack); /* For Safari 5.1 to 6.0 */
@@ -41,10 +31,6 @@
 
 	.about-img {
 		width: 75%;
-	}
-
-	.super-stars-row {
-		margin-left: 5px;
 	}
 }
 
