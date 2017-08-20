@@ -8,7 +8,7 @@ function createImages() {
     var carouselSlides = $('#divImageSlides');
 
     var placeholderDir = 'img/carousel_images/';
-    var images = ['slide1.jpg', 'slide2.jpg'];
+    var images = ['slide1.jpg', 'slide2.jpg', 'slide3.jpg'];
 
     for (var i = 0; i < images.length; i++) {
         carouselSlides.append(createImageSlide(placeholderDir + images[i], i + 1));
