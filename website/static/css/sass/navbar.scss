@@ -13,6 +13,16 @@
 		line-height: $navbar-collapsed-height;
 		font-size: 2em;
 	}
+
+    .special-nav-item {
+        border-left-style: none !important;
+        border-top: thin solid white;
+    }
+}
+
+.special-nav-item {
+    border-left: thin solid white;
+    font-weight: 600;
 }
 
 .navbar-filler {
