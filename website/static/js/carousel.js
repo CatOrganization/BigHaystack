@@ -120,7 +120,7 @@ function testimonialData() {
     return [
         {
             'name': 'Executive Board Member',
-            'text': 'Mary has the utmost integrity, blends and balances confidentiality between client and candidate plus she is an outstanding coach to fully prepare the candidate as the search progresses. She provides an "outside-in" perspective to the decision making process. Over 40 candidates were hired through Mary Morris and the retention rate was ~90%.',
+            'text': 'Mary has the utmost integrity. She blends and balances confidentiality between client and candidate plus she is an outstanding coach to fully prepare the candidate as the search progresses. She provides an "outside-in" perspective to the decision making process. Over 40 candidates were hired through Mary Morris and the retention rate was ~90%.',
         },
         {
             'name': 'Senior Business Consultant',
@@ -139,7 +139,7 @@ function testimonialData() {
             'text': 'Mary did a great job finding me candidates that met some complex criteria. Good listener in terms of interpreting what I wanted. Good follow-up. Experienced recruiter.',
         },
         {
-            'name': 'Customer Sales Director',
+            'name': 'Customer Success Director',
             'text': 'Mary\'s knowledge of her clients\' business and requirements really separate her from other recruiters. She was thoughtful to ensure I would be the right fit throughout the process of recruiting and placing me in my current position. Follow-up was also outstanding.',
         },
         {
@@ -152,7 +152,7 @@ function testimonialData() {
         },
         {
             'name': 'Enterprise Software Sales Director',
-            'text': 'Mary was a joy to work with in my pursuit of my previous career move. She was insightful, informative and responsive and recommend her as a business partner in talent acquisition or as a recruiter.'
+            'text': 'Mary was a joy to work with in my pursuit of my previous career move. She was insightful, informative and responsive. I recommend her as a business partner in talent acquisition or as a recruiter.'
         }
     ];
 
