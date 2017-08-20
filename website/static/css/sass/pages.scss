@@ -102,6 +102,28 @@
     text-align: center;
 }
 
+.focus-subtitle {
+    @extend .focus-title;
+    text-align: left;
+    padding-left: 12%;
+    padding-bottom: 5px;
+}
+
+
 .focus-body {
-    text-align: center;
+    text-align: left;
+    padding-left: 15%;
+    margin-top: 5px;
+}
+
+
+.focus-body-bottom {
+    margin-top: 8%;
+}
+
+$focusBodyRightMargin: 5%;
+
+.focus-body-right {
+    margin-top: $focusBodyRightMargin;
+    margin-bottom: $focusBodyRightMargin;
 }
