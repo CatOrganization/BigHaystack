@@ -3,11 +3,16 @@
 	color: white;
 	margin-left: 20px; 
   	font-size: 2.5em;
-  	line-height: $navbar-height;
+	line-height: $navbar-height;
+	
+	-webkit-transition: line-height 0.5s;
+	-moz-transition: line-height 0.5s;
+	-o-transition: line-height 0.5s;
+	transition: line-height 0.5s;
 }
 
 // when the navbar collapses into a hamburger menu, move the icons to the left
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 	.navbar-contact-icon {
 		float: left;
 		line-height: $navbar-collapsed-height;

@@ -25,12 +25,10 @@ $navbar-collapsed-height: 60px;
 
 @media (max-width: 992px) {
 	.navbar-nav > li > a {
-	    line-height: $navbar-collapsed-height;
-	    height: $navbar-collapsed-height;
+	    line-height: $navbar-collapsed-height !important;
+	    height: $navbar-collapsed-height !important;
 	}
 }
-
-.navbar {min-height:$navbar-height !important;}
 
 .carousel-indicators {
     bottom: -20px;
