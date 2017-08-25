@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    var navbarCollapseWidth = 992;
+    
     // set the navbar filler's height to fit underneath the navbar
     $('.navbar-filler').height($('.navbar').outerHeight(true));
 
@@ -26,6 +28,46 @@ $(document).ready(function() {
             });
         } // End if
     });
+
+    function setNavbarHeight(height) {
+        $('.navbar-nav > li > a, .navbar-brand').css('height', height)
+        $('.navbar-nav > li > a, .navbar-brand').css('line-height', height)
+        $('.navbar-contact-icon').css('line-height', height)
+    }
+
+    function navbarOnScroll() {
+        var winWidth = $(window).width()
+
+        // only if the navbar isn't collapsed
+        if (winWidth >= navbarCollapseWidth) {
+
+            var scrollPos = $(document).scrollTop();
+
+            // top of the window
+            if (scrollPos == 0) {
+                $('#imgNavbarLogo').attr('src', 'img/Black background white letters.png');
+                setNavbarHeight('100px');
+            } else {
+                $('#imgNavbarLogo').attr('src', 'img/logoIconOnly.png');
+                setNavbarHeight('60px');
+            }
+        }
+    }
+
+    function navbarOnResize() {
+        var winWidth = $(window).width()
+
+        if (winWidth < navbarCollapseWidth) {
+            $('#imgNavbarLogo').attr('src', 'img/Black background white letters.png');
+            setNavbarHeight('100px');
+        } else {
+            navbarOnScroll()
+        }
+    }
+
+    $(window).scroll(navbarOnScroll);
+    $(window).resize(navbarOnResize);
+
 })
 
 
