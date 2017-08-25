@@ -8,5 +8,10 @@ $gray-lighter: lighten($gray-darker, 20%);
 
 @font-face {
 	font-family: 'Open Sans';
-	src: url(../font/Open_Sans/OpenSans-Regular.ttf);
+	src: url(../font/OpenSans-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Steelfish';
+	src: url(../font/steelfish.ttf);
 }
