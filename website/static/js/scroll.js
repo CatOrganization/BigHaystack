@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    var navbarCollapseWidth = 992;
+    
     // set the navbar filler's height to fit underneath the navbar
     $('.navbar-filler').height($('.navbar').outerHeight(true));
 
@@ -37,7 +39,7 @@ $(document).ready(function() {
         var winWidth = $(window).width()
 
         // only if the navbar isn't collapsed
-        if (winWidth >= 992) {
+        if (winWidth >= navbarCollapseWidth) {
 
             var scrollPos = $(document).scrollTop();
 
@@ -55,7 +57,7 @@ $(document).ready(function() {
     function navbarOnResize() {
         var winWidth = $(window).width()
 
-        if (winWidth < 992) {
+        if (winWidth < navbarCollapseWidth) {
             $('#imgNavbarLogo').attr('src', 'img/Black background white letters.png');
             setNavbarHeight('100px');
         } else {
