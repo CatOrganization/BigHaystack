@@ -1,0 +1,5 @@
+deploy:
+  provider: s3
+  access_key_id: "AKIAJMMNDYVRZNMAKPBA"
+  secret_access_key: "YOUR AWS SECRET KEY"
+  bucket: "aws-website-bighaystack-1j3m1"
