@@ -1,12 +1,12 @@
 language: ruby
 rvm:
 - 2.0
-cache: gem
+cache: bundler
 install:
-- gem install sass
+- bundle install
 before_script: cd website
 script: ./bin/sass.sh compile
-after_script: ls
+after_success: cd ..
 deploy:
   provider: s3
   access_key_id: AKIAIXCYMXLK6L4Q4LLA
