@@ -1,5 +1,10 @@
 deploy:
   provider: s3
-  access_key_id: "AKIAJMMNDYVRZNMAKPBA"
-  secret_access_key: "YOUR AWS SECRET KEY"
-  bucket: "aws-website-bighaystack-1j3m1"
+  access_key_id: AKIAJMMNDYVRZNMAKPBA
+  secret_access_key:
+    secure: IoSpaWX6gbZjQXgeXT9cgDug1GunWCPVJsAmunCLRiFp6VdJct8c9OylVqcWQx//BZr29RyKmKlWrspzu068p5VKhlSdVUd+xm8dfKsYEYfO0HY7sOlJO4IyT9P4EcBAtHqzU+aPIvihWNU/KXxHCUcdEvOCLqCFOVvGNWThupycAAYSDjK2MD1ZGnJzuK83WZSBEQiz5MKsYn77QMGTzajvD9dKes0at/JGXvadbgUmqnXG/IjeLrcdxpYko76WW/cGSBz7N0r8iLxmibPR1+2I+VtpOrjUVeuKfmqHIQRajF/PGP8lBTcb+tinNXP+GaXzlReawN6/HPSp9W8D6eNDoL1Lx9B+4zf6c++KeKx3o/epvXvSmf+K3iE4xT/qx7mDfsDXJyqt8Sv8IvQycsVa21ucFmLBEyyH8OY1ZGddKdQq5+zn75FsLZypr1qmj7e4mBj7aq32chj23IzLBuulc4yDFNj7QAWHjvIdUBePKVM/7B1X9p2bnk3mpYePzCozlga8CJIkufZFRT9W4ghEC7XKjygBmwlsTn0RDrq+4WWGEYuDPnbMz1Av5dhCUCk2RX/gPjE+kmoxR0b4zX+iEdGWFwxlJDTpB2AgHxtUKhI185Uu+y4Pd7S1dFiCoJDLVWiNWsp8bK0mhxVLbOC03l06nOR99DQaBDgAMS0=
+  bucket: aws-website-bighaystack-1j3m1
+  acl: bucket_owner_full_control
+  on:
+    repo: CatOrganization/BigHaystack
+    branch: master
