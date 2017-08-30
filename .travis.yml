@@ -1,3 +1,9 @@
+language: ruby
+rvm:
+  - 2.0
+install:
+  - gem install sass
+before_deploy: ./website/bin/sass.sh compile
 deploy:
   provider: s3
   access_key_id: AKIAJMMNDYVRZNMAKPBA
