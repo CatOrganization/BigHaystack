@@ -14,7 +14,7 @@ deploy:
     secure: k4B2x6Bb8wzdanf24HfgOgeI3Lm8TDgeuqCI5muZMTAwc964AzogA4TRjzn1PLHtUOJSbuaSfMU17ERqhoduQ1aymhX2ak94WyWuOf4Bky9TS9MjThuOnyPJc1HXZb0IB1ClICQC5HuAqi1ho62sz8O4mOomdbZQ8I4qRx0LNTPVThQBdIxenO20rX2vGqXMMNMPisNaubu4A849jndKxfdVEWx00AL4IQBIBdWIPlrg+6RYxsjNqmfyppmG4S19xox1/PY8DKEvU9ZJPSyMXSQM6t1bj0SWaZ16jqmdU4rVwO8bjgXAo6pig53FgfmIyopXZDx+j3eN3fRLCuxDt+z0WzD5X4Fy/xMjYypmx3KMO0RrOHWTTZra/WPSaCGBshPlTyy5to95aOhZGN+9/HNE0KCphQvWiQdKYHiFWxNsRXjU6hwOVzhQLIbBcQRsoPjo12heEOa63c+P8yU2wkoSWdx+9YmvasUyltzj/RzOF4SYNWt8WiROb4H52/XsxlVmfu5bwGXeuu1Kt/HYI7F9ua/0Kj6+dN1K9TXLLdjifxAUr/VOpgIBs7cpeAQsbLz2YSbUVwJ3enPdSu6WB7wU/2PxWCdhfAqBP4rzxz1fJCv12ORjJtvxd8wYN7wdxxe1tJ9Y5uBKy+bUXKe6DexQGu/2zFYAhVp7CSImpmM=
   bucket: aws-website-bighaystack-1j3m1
   local-dir: website/static/
-  acl: bucket_owner_full_control
+  acl: public_read
   on:
     repo: CatOrganization/BigHaystack
     branch: master
