@@ -16,6 +16,13 @@
 	font-family: 'Open Sans';
 }
 
+.about-body {
+	color: white;
+	margin-top: 15px;
+	font-family: 'Open Sans';
+	font-size: large;
+}
+
 .about-page-break {
 	text-align: center;
 	padding: 50px 0;
@@ -40,7 +47,8 @@
 	}
 
 	.about-img {
-		width: 75%;
+		width: 60%;
+		margin-top: -80px;
 	}
 
 	.super-stars-row {
