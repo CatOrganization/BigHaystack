@@ -28,6 +28,16 @@ function createImageSlide(imageSrc, imageNum) {
     slide.setAttribute('id', 'divImageSlide' + imageNum);
 
     slide.appendChild(image);
+
+    // if this is the first image in the carousel, add the on load event listener to remove the placeholder padding
+    if (imageNum == 1) {
+        $(image).css('display', 'none');
+        image.onload = function() {
+            $(image).css('display', 'inherit');
+            $('#divImageWrapper').css('padding-top', '0');
+        }
+    }
+
     return slide;
 }
 
