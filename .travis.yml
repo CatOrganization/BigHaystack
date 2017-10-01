@@ -8,6 +8,7 @@ before_script: cd website
 script: ./bin/sass.sh compile
 after_success: git add  -f static/css/main.css && cd ..
 deploy:
+  skip_cleanup: true
   provider: s3
   access_key_id: AKIAIXCYMXLK6L4Q4LLA
   secret_access_key:
